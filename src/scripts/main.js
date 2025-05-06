@@ -25,7 +25,7 @@ const firstPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
     if (!firstResolved) {
       reject(
-        new Error('First promise was rejected in 3 seconds if not clicked'),
+        new Error('First promise was rejected in 3 seconds if not clicked')
       );
       document.removeEventListener('mousedown', handler);
     }
